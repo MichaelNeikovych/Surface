@@ -1,0 +1,192 @@
+@media (max-width: 1023px) {
+    .container {
+        max-width: 98%;
+    }
+    .header__logo {
+        padding-bottom: 180px;
+    }
+    .header__text {
+        font-size: 64px;
+        &-1 {
+            left: 70px;
+            z-index: 3;
+        }
+        &-2 {
+            left: 180px;
+            z-index: 2;
+        }
+    }
+    .stick {
+        top: 120px;
+        z-index: 1;
+    }
+    .nav {
+        margin: 420px 0 180px;
+    }
+    .nav__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav__items {
+        margin-left: 0;
+    }
+    .nav__links {
+        color: $violet-1;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.7px;
+    }
+
+
+    //ATHLETS
+    .athlets__title {
+        margin-bottom: 40px;
+        margin-left: 37%;
+        padding-top: 60px;
+    }
+    .footballer__img {
+        top: -110px;
+        right: 55%;
+        width: 497px;
+        height: 699px;
+        background-size: contain;
+        &::after {
+            top: -20px;
+            right: 55%;  
+        }
+    }
+    .footballer__stick {
+        top: 240px;
+        right: 47%;
+    }  
+    .athlets__description {
+        margin-left: 37%;
+    }
+    .connection {
+        padding: 0 0 60px;
+    }
+    .collaboration {
+        padding: 35px 0 35px;
+    }
+    .growth {
+        padding: 35px 0 35px;
+    }
+    .athlets__text {
+        font-size: 18px;
+    }
+
+    // PLAYERS
+    .basketballer__img {
+        width: 690px;
+        height: 565px;
+        top: -180px;
+        left: 42%;
+        &::after {
+            top: 70px;
+            right: 66%;
+        }
+    }
+    .footballer__stick.stick-01 {
+        top: 110px;
+        right: -22%;
+        width: 500px;
+    }
+    .footballer__stick.stick-02 {
+        top: 0;
+        right: -50%;
+        width: 400px;
+    }
+    .athlets__description.player {
+        max-width: 415px;
+    }
+    
+    
+    // ----------- THIRD SCREEN ----------- //
+    .item__box {
+        flex-direction: column;
+    }
+    .item--01-active, .item--02-contact, .item--03-work {
+        width: 100%;
+        height: 584px;
+    }
+    .item__active, .item__contact, .item__work {
+        padding: 0;
+        width: 100%;
+        min-height: 335px;
+    }
+    .item__active__description, .item__contact__description, .item__work__description {
+        margin-left: 5%;
+    }
+    .active__contact__work .athlets__title {
+        margin-bottom: 0;
+    }
+    .item__box__text, .item__contact .item__box__text, .item__work__description .item__box__text {
+        max-width: 100%;
+    }
+    .number__box {
+        width: 116px;
+        height: 116px;
+    }
+    .box__position--active, .box__position--contact, .box__position--work {
+        top: -30%;
+        left: 0;
+    }
+    .item--01-active {
+        order: 1;
+    }
+    .item__active {
+        order: 2;
+    }
+    .item--02-contact {
+        order: 3;
+    }
+    .item__contact {
+        order: 4;
+    }
+    .item--03-work {
+        order: 5;
+    }
+    .item__work {
+        order: 6;
+    }
+    .item__box__text {
+        &::after {
+            margin-top: 35px;
+        }
+    }
+
+
+// ----------- FOURTH SCREEN ----------- //
+    .download__wrap {
+        flex-direction: column;
+    }
+    .download__button__link {
+        margin-right: 0;
+        margin-bottom: 82px;
+    }
+    .download__text-01 {
+        font-size: 80px;
+    }
+    .download__wrap .footballer__stick.stick-01 {
+        width: 180px;
+        top: 80%;
+        left: -1%;
+    }
+    .download__wrap .footballer__stick.stick-02 {
+        top: 85%;
+        left: 34%;
+    }
+    .footer__bg .overlay {
+        padding: 95px 0 20px;
+    }
+    .footer__overlay {
+        min-height: 95px;
+    }
+    .footer__wrap {
+        min-height: 95px;
+        justify-content: center;
+    }
+    .contacts__wrap, .footer__logo {
+        display: none;
+    }
+}

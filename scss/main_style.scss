@@ -1,0 +1,485 @@
+body {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    overflow-x:hidden;
+}
+.container, .footer__container {
+    max-width: 85%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.footer__container {
+    max-width: 95%;
+}
+
+
+// ----------- FIRST SCREEN ----------- //
+.header, .footer__bg {
+    background: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    background: rgba(10, 14, 52, 0.9);
+    background-size: cover;
+    padding: 54px 0 110px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 270px;
+    .for {
+    	font-family: 'ProximaNova-Light';
+        margin-left: auto;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+.logo {
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+.header__text {
+    font-family: 'ProximaNova-Bold';
+    position: relative;
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    letter-spacing: 4.96px;
+    &-1 {
+        position: absolute;
+        left: 0;
+        z-index: 3;
+    }
+    &-2 {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: 1;
+    }
+}
+.stick {
+    position: absolute;
+    top: 90px;
+    left: 20%;
+    width: 400px;
+    height: 5px;
+    background-color: $violet-dark;
+    transform: rotate(-55deg);
+    z-index: 2;
+}
+.nav {
+    margin: 200px 0 180px;
+}
+.nav__list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}    
+.nav__items {
+    margin-left: 50px;
+}
+.nav__links {
+    color: $violet-1;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    transition: 0.3s;
+    &:hover {
+        color: $violet-dark;
+    }
+}
+.buttons__wrap {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'ProximaNova-Light';
+    margin-right: 50px;
+    box-shadow: 0 16px 24px #0a0e34;
+    background-color: $violet-dark;
+    border-radius: 38px;
+    padding: 25px 0;
+    width: 350px;
+    padding-left: 120px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    transition: 0.3s;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        background-color: $violet-3;
+    }
+
+    .button-span {
+	    font-family: 'ProximaNova-Bold';
+    }
+}
+.button_iphone::before {
+    content: url('../images/icon_apple.png');
+    position: absolute;
+    top: 20px;
+    left: 50px;   
+}
+.button_android::before {
+    content: url('../images/icon_google_play.png');
+    position: absolute;
+    top: 25px;
+    left: 50px;   
+}
+
+
+// ----------- SECOND SCREEN ----------- //
+//ATHLETS
+.athlets__title {
+    font-family: 'ProximaNova-Bold';
+    color: $grey-light;
+    font-size: 90px;
+    text-transform: uppercase;
+    margin-left: 50%;
+    padding-top: 90px;
+}
+.footballer__img__wrap {
+    position: relative;
+}
+.footballer__img {
+    background-image: url('../images/footballer.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -160px;
+    right: 50%;
+    width: 678px;
+    height: 950px;
+    z-index: 3;
+    &::after {
+        content: ' ';
+        display: block;
+        background-image: url('../images/crosses.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 120px;
+        right: 85%;
+        width: 39px;
+        height: 26px;   
+    }
+}
+.footballer__stick {
+    position: absolute;
+    top: 210px;
+    right: 48%;
+    width: 877px;
+    height: 5px;
+    background-color: $violet-1;
+    transform: rotate(-50deg);
+    z-index: 1;
+}
+.athlets__description {
+    max-width: 720px;
+    margin-left: 50%;
+}
+.connection {
+    padding: 50px 0 60px;
+}
+.collaboration {
+    padding: 65px 0 60px;
+    background-color: #f6f4fa;
+}
+.growth {
+    padding: 90px 0 90px;
+    background-color: $violet-dark;
+}
+.athlets__subtitle {
+    display: flex;
+    align-items: center;
+    color: $grey;
+    font-family: 'ProximaNova-Bold';
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 15px;
+}
+.athlets__number {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: -0.9px;
+    margin-right: 10px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: $violet-dark;
+    }
+}
+.athlets__text {
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.growth .athlets__number::after {
+    background-color: $milk-2;
+}
+.growth .athlets__text {
+    color: #fff;
+}
+
+
+// PLAYERS
+.players__wrap .athlets__title {
+    margin-left: 0;
+}
+.basketballer__img {
+    background-image: url('../images/basketballer.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    top: -230px;
+    left: 37%;
+    width: 991px;
+    height: 815px;
+    z-index: 3;
+    &::after, &::before {
+        content: ' ';
+        display: block;
+        background-image: url('../images/crosses-02.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 120px;
+        right: 66%;
+        width: 39px;
+        height: 34px;   
+    }
+    &::before {
+        background-image: url('../images/cross.png');
+        top: 390px;
+        right: 20%;
+        width: 17px;
+        height: 17px;   
+    }
+}
+.footballer__stick.stick-01, .footballer__stick.stick-02 {
+    top: 330px;
+    right: 25%;
+    width: 500px;
+    transform: rotate(-50deg);
+    z-index: 1;
+}
+.footballer__stick.stick-02 {
+    top: 0;
+    right: 0;
+    width: 400px;
+}
+.athlets__description.player {
+    margin-left: 0;
+    max-width: 570px;
+}
+.players__wrap .collaboration {
+    background-color: $milk;
+}
+.players__wrap .growth {
+    background-color: #0a0e34;
+}
+.violet-1 {
+    color: $violet-1;
+}
+
+
+// ----------- THIRD SCREEN ----------- //
+.item__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item--01-active, .item--02-contact, .item--03-work {
+    background-image: url('../images/01-active.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 730px;
+}
+.item__active, .item__contact, .item__work {
+    padding: 120px 0 0;
+    width: 50%;
+    min-height: 730px;
+}
+.item__active__description, .item__contact__description, .item__work__description {
+    position: relative;
+    margin-left: 13%;
+}
+.active__contact__work .athlets__title {
+    margin-left: 0;
+    margin-bottom: 90px;
+}
+.item__box__text {
+    max-width: 330px;
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+    &::after {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: $violet-dark;
+        margin-top: 120px;
+    }
+}
+.number__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 150px;
+    background-color: $violet-dark;
+    color: $milk;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    &::after {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #fff;
+        opacity: 0.3;
+    }
+}
+.box__position--active {
+    position: absolute;
+    top: 14%;
+    left: calc(-15% - 80px);
+}
+.item--02-contact {
+    background-image: url('../images/02-contact.jpg');
+}
+.box__position--contact {
+    position: absolute;
+    top: 14%;
+    right: calc(-0.3% - 80px);
+}
+.item__contact .item__box__text {
+    max-width: 400px;
+}
+.item--03-work {
+    background-image: url('../images/03-work.jpg');
+}
+.item__work__description .item__box__text {
+    max-width: 600px;
+}
+.box__position--work {
+    position: absolute;
+    top: 14%;
+    left: calc(-15% - 80px);
+}
+
+
+// ----------- FOURTH SCREEN ----------- //
+.footer__bg {
+    background-image: url('../images/footer-bg.png');
+}
+.download__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    position: relative;
+}
+.download__button__link {
+    margin-right: 25px;
+    transition: 0.5s;
+}
+.download__button__link:hover {
+    transform: scale(1.02);
+}
+.download__text-01 {
+    font-family: 'ProximaNova-Bold';
+    color: #fff;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4.96px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+.download__text-02 {
+    font-family: 'ProximaNova-Bold';
+    color: $violet-light;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34.49px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+.download__wrap .footballer__stick.stick-01 {
+    width: 220px;
+    top: 35%;
+    left: 29%;
+    z-index: 1;
+}
+.download__wrap .footballer__stick.stick-02 {
+    top: 35%;
+    left: 50%;
+    z-index: 1;
+}
+.footer__bg .overlay {
+    padding: 230px 0 60px;
+}
+.footer__download .buttons__wrap {
+    margin-bottom: 196px;
+}
+.footer__overlay {
+    min-height: 170px;
+    background: rgba(10, 14, 52, 0.95);
+}
+.footer__wrap {
+    min-height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    transition: 0.3s;
+    &:hover {
+        color: $violet-light;
+    }
+}
+.slash {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 5px;
+}
+.icon_fb, .icon_tw {
+    margin-right: 35px;
+}
+.icon__item:hover .icon__img {
+    transform: scale(1.1);
+    transition: 0.3s;
+}

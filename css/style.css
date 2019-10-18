@@ -1,0 +1,1143 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, textarea {
+  outline: none;
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/ProximaNova-Regular.eot"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../fonts/ProximaNova-Light.eot"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../fonts/ProximaNova-Bold.eot"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+body {
+  font-family: "ProximaNova-Regular", sans-serif;
+  overflow-x: hidden;
+}
+
+.container, .footer__container {
+  max-width: 85%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer__container {
+  max-width: 95%;
+}
+
+.header, .footer__bg {
+  background: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background: rgba(10, 14, 52, 0.9);
+  background-size: cover;
+  padding: 54px 0 110px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 270px;
+}
+.header__logo .for {
+  font-family: "ProximaNova-Light";
+  margin-left: auto;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.logo {
+  transition: 0.3s;
+}
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.header__text {
+  font-family: "ProximaNova-Bold";
+  position: relative;
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 4.96px;
+}
+.header__text-1 {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+.header__text-2 {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  z-index: 1;
+}
+
+.stick {
+  position: absolute;
+  top: 90px;
+  left: 20%;
+  width: 400px;
+  height: 5px;
+  background-color: #5e42b0;
+  transform: rotate(-55deg);
+  z-index: 2;
+}
+
+.nav {
+  margin: 200px 0 180px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.nav__items {
+  margin-left: 50px;
+}
+
+.nav__links {
+  color: #9173e6;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  transition: 0.3s;
+}
+.nav__links:hover {
+  color: #5e42b0;
+}
+
+.buttons__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "ProximaNova-Light";
+  margin-right: 50px;
+  box-shadow: 0 16px 24px #0a0e34;
+  background-color: #5e42b0;
+  border-radius: 38px;
+  padding: 25px 0;
+  width: 350px;
+  padding-left: 120px;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  transition: 0.3s;
+}
+.button:last-child {
+  margin-right: 0;
+}
+.button:hover {
+  background-color: #9172e6;
+}
+.button .button-span {
+  font-family: "ProximaNova-Bold";
+}
+
+.button_iphone::before {
+  content: url("../images/icon_apple.png");
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.button_android::before {
+  content: url("../images/icon_google_play.png");
+  position: absolute;
+  top: 25px;
+  left: 50px;
+}
+
+.athlets__title {
+  font-family: "ProximaNova-Bold";
+  color: #e7e7e7;
+  font-size: 90px;
+  text-transform: uppercase;
+  margin-left: 50%;
+  padding-top: 90px;
+}
+
+.footballer__img__wrap {
+  position: relative;
+}
+
+.footballer__img {
+  background-image: url("../images/footballer.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -160px;
+  right: 50%;
+  width: 678px;
+  height: 950px;
+  z-index: 3;
+}
+.footballer__img::after {
+  content: " ";
+  display: block;
+  background-image: url("../images/crosses.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120px;
+  right: 85%;
+  width: 39px;
+  height: 26px;
+}
+
+.footballer__stick {
+  position: absolute;
+  top: 210px;
+  right: 48%;
+  width: 877px;
+  height: 5px;
+  background-color: #9173e6;
+  transform: rotate(-50deg);
+  z-index: 1;
+}
+
+.athlets__description {
+  max-width: 720px;
+  margin-left: 50%;
+}
+
+.connection {
+  padding: 50px 0 60px;
+}
+
+.collaboration {
+  padding: 65px 0 60px;
+  background-color: #f6f4fa;
+}
+
+.growth {
+  padding: 90px 0 90px;
+  background-color: #5e42b0;
+}
+
+.athlets__subtitle {
+  display: flex;
+  align-items: center;
+  color: #c1c1c1;
+  font-family: "ProximaNova-Bold";
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-bottom: 15px;
+}
+
+.athlets__number {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: -0.9px;
+  margin-right: 10px;
+}
+.athlets__number::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+}
+
+.athlets__text {
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.growth .athlets__number::after {
+  background-color: #efefef;
+}
+
+.growth .athlets__text {
+  color: #fff;
+}
+
+.players__wrap .athlets__title {
+  margin-left: 0;
+}
+
+.basketballer__img {
+  background-image: url("../images/basketballer.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  top: -230px;
+  left: 37%;
+  width: 991px;
+  height: 815px;
+  z-index: 3;
+}
+.basketballer__img::after, .basketballer__img::before {
+  content: " ";
+  display: block;
+  background-image: url("../images/crosses-02.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 120px;
+  right: 66%;
+  width: 39px;
+  height: 34px;
+}
+.basketballer__img::before {
+  background-image: url("../images/cross.png");
+  top: 390px;
+  right: 20%;
+  width: 17px;
+  height: 17px;
+}
+
+.footballer__stick.stick-01, .footballer__stick.stick-02 {
+  top: 330px;
+  right: 25%;
+  width: 500px;
+  transform: rotate(-50deg);
+  z-index: 1;
+}
+
+.footballer__stick.stick-02 {
+  top: 0;
+  right: 0;
+  width: 400px;
+}
+
+.athlets__description.player {
+  margin-left: 0;
+  max-width: 570px;
+}
+
+.players__wrap .collaboration {
+  background-color: #f5f6f7;
+}
+
+.players__wrap .growth {
+  background-color: #0a0e34;
+}
+
+.violet-1 {
+  color: #9173e6;
+}
+
+.item__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item--01-active, .item--02-contact, .item--03-work {
+  background-image: url("../images/01-active.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  height: 730px;
+}
+
+.item__active, .item__contact, .item__work {
+  padding: 120px 0 0;
+  width: 50%;
+  min-height: 730px;
+}
+
+.item__active__description, .item__contact__description, .item__work__description {
+  position: relative;
+  margin-left: 13%;
+}
+
+.active__contact__work .athlets__title {
+  margin-left: 0;
+  margin-bottom: 90px;
+}
+
+.item__box__text {
+  max-width: 330px;
+  color: #000;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+}
+.item__box__text::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  margin-top: 120px;
+}
+
+.number__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 150px;
+  background-color: #5e42b0;
+  color: #f5f6f7;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.number__box::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.box__position--active {
+  position: absolute;
+  top: 14%;
+  left: calc(-15% - 80px);
+}
+
+.item--02-contact {
+  background-image: url("../images/02-contact.jpg");
+}
+
+.box__position--contact {
+  position: absolute;
+  top: 14%;
+  right: calc(-0.3% - 80px);
+}
+
+.item__contact .item__box__text {
+  max-width: 400px;
+}
+
+.item--03-work {
+  background-image: url("../images/03-work.jpg");
+}
+
+.item__work__description .item__box__text {
+  max-width: 600px;
+}
+
+.box__position--work {
+  position: absolute;
+  top: 14%;
+  left: calc(-15% - 80px);
+}
+
+.footer__bg {
+  background-image: url("../images/footer-bg.png");
+}
+
+.download__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.download__button__link {
+  margin-right: 25px;
+  transition: 0.5s;
+}
+
+.download__button__link:hover {
+  transform: scale(1.02);
+}
+
+.download__text-01 {
+  font-family: "ProximaNova-Bold";
+  color: #fff;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4.96px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.download__text-02 {
+  font-family: "ProximaNova-Bold";
+  color: #a496ca;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 34.49px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.download__wrap .footballer__stick.stick-01 {
+  width: 220px;
+  top: 35%;
+  left: 29%;
+  z-index: 1;
+}
+
+.download__wrap .footballer__stick.stick-02 {
+  top: 35%;
+  left: 50%;
+  z-index: 1;
+}
+
+.footer__bg .overlay {
+  padding: 230px 0 60px;
+}
+
+.footer__download .buttons__wrap {
+  margin-bottom: 196px;
+}
+
+.footer__overlay {
+  min-height: 170px;
+  background: rgba(10, 14, 52, 0.95);
+}
+
+.footer__wrap {
+  min-height: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.contacts:hover {
+  color: #a496ca;
+}
+
+.slash {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+.icon_fb, .icon_tw {
+  margin-right: 35px;
+}
+
+.icon__item:hover .icon__img {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 98%;
+  }
+
+  .header__logo {
+    padding-bottom: 180px;
+  }
+
+  .header__text {
+    font-size: 64px;
+  }
+  .header__text-1 {
+    left: 70px;
+    z-index: 3;
+  }
+  .header__text-2 {
+    left: 180px;
+    z-index: 2;
+  }
+
+  .stick {
+    top: 120px;
+    z-index: 1;
+  }
+
+  .nav {
+    margin: 420px 0 180px;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav__items {
+    margin-left: 0;
+  }
+
+  .nav__links {
+    color: #9173e6;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+  }
+
+  .athlets__title {
+    margin-bottom: 40px;
+    margin-left: 37%;
+    padding-top: 60px;
+  }
+
+  .footballer__img {
+    top: -110px;
+    right: 55%;
+    width: 497px;
+    height: 699px;
+    background-size: contain;
+  }
+  .footballer__img::after {
+    top: -20px;
+    right: 55%;
+  }
+
+  .footballer__stick {
+    top: 240px;
+    right: 47%;
+  }
+
+  .athlets__description {
+    margin-left: 37%;
+  }
+
+  .connection {
+    padding: 0 0 60px;
+  }
+
+  .collaboration {
+    padding: 35px 0 35px;
+  }
+
+  .growth {
+    padding: 35px 0 35px;
+  }
+
+  .athlets__text {
+    font-size: 18px;
+  }
+
+  .basketballer__img {
+    width: 690px;
+    height: 565px;
+    top: -180px;
+    left: 42%;
+  }
+  .basketballer__img::after {
+    top: 70px;
+    right: 66%;
+  }
+
+  .footballer__stick.stick-01 {
+    top: 110px;
+    right: -22%;
+    width: 500px;
+  }
+
+  .footballer__stick.stick-02 {
+    top: 0;
+    right: -50%;
+    width: 400px;
+  }
+
+  .athlets__description.player {
+    max-width: 415px;
+  }
+
+  .item__box {
+    flex-direction: column;
+  }
+
+  .item--01-active, .item--02-contact, .item--03-work {
+    width: 100%;
+    height: 584px;
+  }
+
+  .item__active, .item__contact, .item__work {
+    padding: 0;
+    width: 100%;
+    min-height: 335px;
+  }
+
+  .item__active__description, .item__contact__description, .item__work__description {
+    margin-left: 5%;
+  }
+
+  .active__contact__work .athlets__title {
+    margin-bottom: 0;
+  }
+
+  .item__box__text, .item__contact .item__box__text, .item__work__description .item__box__text {
+    max-width: 100%;
+  }
+
+  .number__box {
+    width: 116px;
+    height: 116px;
+  }
+
+  .box__position--active, .box__position--contact, .box__position--work {
+    top: -30%;
+    left: 0;
+  }
+
+  .item--01-active {
+    order: 1;
+  }
+
+  .item__active {
+    order: 2;
+  }
+
+  .item--02-contact {
+    order: 3;
+  }
+
+  .item__contact {
+    order: 4;
+  }
+
+  .item--03-work {
+    order: 5;
+  }
+
+  .item__work {
+    order: 6;
+  }
+
+  .item__box__text::after {
+    margin-top: 35px;
+  }
+
+  .download__wrap {
+    flex-direction: column;
+  }
+
+  .download__button__link {
+    margin-right: 0;
+    margin-bottom: 82px;
+  }
+
+  .download__text-01 {
+    font-size: 80px;
+  }
+
+  .download__wrap .footballer__stick.stick-01 {
+    width: 180px;
+    top: 80%;
+    left: -1%;
+  }
+
+  .download__wrap .footballer__stick.stick-02 {
+    top: 85%;
+    left: 34%;
+  }
+
+  .footer__bg .overlay {
+    padding: 95px 0 20px;
+  }
+
+  .footer__overlay {
+    min-height: 95px;
+  }
+
+  .footer__wrap {
+    min-height: 95px;
+    justify-content: center;
+  }
+
+  .contacts__wrap, .footer__logo {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  .overlay {
+    padding: 54px 0 5px;
+  }
+
+  .header__logo {
+    padding-bottom: 125px;
+  }
+
+  .header__logo {
+    justify-content: center;
+  }
+
+  .for {
+    display: none;
+  }
+
+  .header__text {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+  }
+  .header__text-1 {
+    left: 0;
+  }
+  .header__text-2 {
+    top: 50px;
+    left: 18%;
+  }
+
+  .stick {
+    top: 70px;
+    left: 10%;
+    width: 220px;
+    height: 3px;
+  }
+
+  .nav__button__order__wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 250px 0 20px;
+  }
+
+  .nav {
+    margin: 40px 30px 0;
+    order: 1;
+  }
+
+  .nav__links {
+    font-size: 12px;
+    line-height: 24px;
+  }
+
+  .buttons__wrap {
+    justify-content: space-around;
+  }
+
+  .button {
+    margin-right: 0;
+    padding: 10px 0;
+    width: 140px;
+    padding-left: 50px;
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .button_iphone::before {
+    content: url("../images/icon_apple_mini.png");
+    top: 12px;
+    left: 25px;
+  }
+
+  .button_android::before {
+    content: url("../images/icon_google_play_mini.png");
+    top: 12px;
+    left: 25px;
+  }
+
+  .athlets__title {
+    font-size: 50px;
+    margin-bottom: 215px;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .footballer__img {
+    top: -210px;
+    right: 15%;
+    width: 192px;
+    height: 281px;
+    background-size: contain;
+  }
+  .footballer__img::after {
+    top: 10px;
+    right: 80%;
+  }
+
+  .footballer__stick {
+    width: 270px;
+    height: 3px;
+    top: -100px;
+    right: 5%;
+  }
+
+  .athlets__description {
+    margin-left: 10px;
+  }
+
+  .connection {
+    display: none;
+  }
+
+  .collaboration {
+    padding: 70px 0 20px;
+  }
+
+  .growth {
+    display: none;
+  }
+
+  .athlets__text {
+    font-size: 15px;
+  }
+
+  .athlets__subtitle {
+    font-size: 28px;
+  }
+
+  .selectors {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 5px;
+  }
+
+  .selector {
+    width: 10px;
+    height: 10px;
+    background: #d8d8d8;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .selector:hover {
+    background: #5e42b0;
+  }
+
+  .basketballer__img {
+    width: 300px;
+    height: 248px;
+    top: -200px;
+    left: -2%;
+  }
+  .basketballer__img::after {
+    background-image: url("../images/crosses.png");
+    top: 10px;
+    right: 70%;
+  }
+  .basketballer__img::before {
+    display: none;
+  }
+
+  .players__wrap .athlets__title {
+    padding-top: 0;
+  }
+
+  .footballer__stick.stick-01 {
+    top: -50px;
+    right: 25%;
+    width: 200px;
+    height: 3px;
+  }
+
+  .footballer__stick.stick-02 {
+    top: -135px;
+    right: 0;
+    width: 120px;
+    height: 3px;
+  }
+
+  .players__wrap .collaboration {
+    display: none;
+  }
+
+  .players__wrap .growth {
+    display: block;
+    background-color: #f6f4fa;
+  }
+
+  .growth .athlets__text {
+    color: #000;
+  }
+
+  .violet-1 {
+    color: #000;
+  }
+
+  .growth .athlets__number::after {
+    background-color: #5e42b0;
+  }
+
+  .growth {
+    padding-top: 80px;
+  }
+
+  .item--01-active, .item--02-contact, .item--03-work {
+    height: 0;
+    min-height: 351px;
+  }
+
+  .item__active, .item__contact, .item__work {
+    padding: 0;
+    width: 100%;
+    min-height: 210px;
+  }
+
+  .number__box {
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+  }
+  .number__box::after {
+    width: 16px;
+    height: 4px;
+    margin-bottom: 10px;
+  }
+
+  .box__position--active, .box__position--contact, .box__position--work {
+    top: -45%;
+    left: 0;
+  }
+
+  .item__box__text {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+  }
+  .item__box__text::after {
+    margin-top: 20px;
+  }
+
+  .active__contact__work .athlets__title {
+    font-size: 28px;
+    padding-top: 30px;
+  }
+
+  .download__button__link, .download__button__img {
+    margin-bottom: 55px;
+    width: 73px;
+    height: 78px;
+  }
+
+  .download__text-01 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    margin-bottom: 10px;
+    z-index: 3;
+  }
+
+  .download__text-02 {
+    font-size: 15px;
+    line-height: 15px;
+    z-index: 1;
+  }
+
+  .download__wrap .footballer__stick.stick-01 {
+    width: 100px;
+    top: 84%;
+    left: 0%;
+    z-index: 2;
+  }
+
+  .download__wrap .footballer__stick.stick-02 {
+    z-index: 2;
+  }
+
+  .footer__bg .overlay {
+    padding: 95px 0 10px;
+  }
+
+  .footer__overlay, .footer__wrap {
+    min-height: 50px;
+  }
+
+  .contacts__wrap, .footer__logo {
+    display: none;
+  }
+
+  .footer__download .buttons__wrap {
+    margin-bottom: 120px;
+  }
+
+  .icon_fb .icon__img {
+    width: 10px;
+    height: 18px;
+  }
+
+  .icon_tw .icon__img {
+    width: 18px;
+    height: 15px;
+  }
+
+  .icon_inst .icon__img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .download__wrap {
+    margin-bottom: 60px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

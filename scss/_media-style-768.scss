@@ -1,0 +1,274 @@
+@media (max-width: 767px) {
+    .container {
+        padding: 0 5px;
+    }
+    .overlay {
+        padding: 54px 0 5px; 
+    }
+    .header__logo {
+        padding-bottom: 125px;
+    }
+    .header__logo {
+        justify-content: center;
+    }
+    .for {
+        display: none;
+    }
+    .header__text {
+        font-size: 32px;
+        letter-spacing: 0.5px;
+        &-1 {
+            left: 0;
+        }
+        &-2 {
+            top: 50px;
+            left: 18%;
+        }
+    }
+    .stick {
+        top: 70px;
+        left: 10%;
+        width: 220px;
+        height: 3px;
+    }
+    .nav__button__order__wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 250px 0 20px;
+    }
+    .nav {
+        margin: 40px 30px 0;
+        order: 1;
+    }
+    .nav__links {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .buttons__wrap {
+        justify-content: space-around;
+    }
+    .button {
+        margin-right: 0;
+        padding: 10px 0;
+        width: 140px;
+        padding-left: 50px;
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .button_iphone::before {
+        content: url('../images/icon_apple_mini.png');
+        top: 12px;
+        left: 25px;   
+    }
+    .button_android::before {
+        content: url('../images/icon_google_play_mini.png');
+        top: 12px;
+        left: 25px;   
+    }
+
+
+    //ATHLETS
+    .athlets__title {
+        font-size: 50px;
+        margin-bottom: 215px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .footballer__img {
+        top: -210px;
+        right: 15%;
+        width: 192px;
+        height: 281px;
+        background-size: contain;
+        &::after {
+            top: 10px;
+            right: 80%;  
+        }
+    }
+    .footballer__stick {
+        width: 270px;
+        height: 3px;
+        top: -100px;
+        right: 5%;
+    }  
+    .athlets__description {
+        margin-left: 10px;
+    }
+    .connection {
+        display: none;
+    }
+    .collaboration {
+        padding: 70px 0 20px;
+    }
+    .growth {
+        display: none;
+    }
+    .athlets__text {
+        font-size: 15px;
+    }
+    .athlets__subtitle {
+        font-size: 28px;
+    }
+    .selectors {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 5px;
+    }
+    .selector {
+        width: 10px;
+        height: 10px;
+        background: #d8d8d8;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        &:hover {
+            background: $violet-dark;
+        }
+    }
+
+
+    // PLAYERS
+    .basketballer__img {
+        width: 300px;
+        height: 248px;
+        top: -200px;
+        left: -2%;
+        &::after {
+            background-image: url('../images/crosses.png');
+            top: 10px;
+            right: 70%;
+        }
+        &::before {
+            display: none;
+        }
+    }
+    .players__wrap .athlets__title {
+        padding-top: 0;
+    }
+    .footballer__stick.stick-01 {
+        top: -50px;
+        right: 25%;
+        width: 200px;
+        height: 3px;
+    }
+    .footballer__stick.stick-02 {
+        top: -135px;
+        right: 0;
+        width: 120px;
+        height: 3px;
+    }
+    .players__wrap .collaboration {
+        display: none;
+    }
+    .players__wrap .growth {
+        display: block;
+        background-color: #f6f4fa;
+    }
+    .growth .athlets__text {
+        color: #000;
+    }
+    .violet-1 {
+        color: #000;
+    }
+    .growth .athlets__number::after {
+        background-color: $violet-dark;
+    }
+    .growth {
+        padding-top: 80px;
+    }
+
+
+    // ----------- THIRD SCREEN ----------- //
+    .item--01-active, .item--02-contact, .item--03-work {
+        height: 0;
+        min-height: 351px;
+    }
+    .item__active, .item__contact, .item__work {
+        padding: 0;
+        width: 100%;
+        min-height: 210px;
+    }
+    .number__box {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+        &::after {
+            width: 16px;
+            height: 4px;
+            margin-bottom: 10px;
+        }
+    }
+    .box__position--active, .box__position--contact, .box__position--work {
+        top: -45%;
+        left: 0;
+    }
+    .item__box__text {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+        &::after {
+            margin-top: 20px;
+        }
+    }
+    .active__contact__work .athlets__title {
+        font-size: 28px;
+        padding-top: 30px;
+    }
+    
+    
+    // ----------- FOURTH SCREEN ----------- //
+    .download__button__link, .download__button__img {
+        margin-bottom: 55px;
+        width: 73px;
+        height: 78px;
+    }
+    .download__text-01 {
+        font-size: 34px;
+        letter-spacing: 1px;
+        line-height: 34px;
+        margin-bottom: 10px;
+        z-index: 3;
+    }
+    .download__text-02 {
+        font-size: 15px;   
+        line-height: 15px;
+        z-index: 1;
+    }
+    .download__wrap .footballer__stick.stick-01 {
+        width: 100px;
+        top: 84%;
+        left: 0%;
+        z-index: 2;
+    }
+    .download__wrap .footballer__stick.stick-02 {
+        z-index: 2;
+    }
+    .footer__bg .overlay {
+        padding: 95px 0 10px;
+    }
+    .footer__overlay, .footer__wrap {
+        min-height: 50px;
+    }
+    .contacts__wrap, .footer__logo {
+        display: none;
+    }
+    .footer__download .buttons__wrap {
+        margin-bottom: 120px;
+    }
+    .icon_fb .icon__img {
+        width: 10px;
+        height: 18px;
+    }
+    .icon_tw .icon__img {
+        width: 18px;
+        height: 15px;
+    }
+    .icon_inst .icon__img {
+        width: 17px;
+        height: 17px;
+    }
+    .download__wrap {
+        margin-bottom: 60px;
+    }
+}
