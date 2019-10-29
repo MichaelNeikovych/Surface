@@ -1,14 +1,14 @@
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: 'ProximaNova-Regular', sans-serif;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 .container, .footer__container {
-    max-width: 85%;
+    max-width: 1590px;
     padding: 0 15px;
     margin: 0 auto;
-}
-.footer__container {
-    max-width: 95%;
 }
 
 
