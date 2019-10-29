@@ -66,19 +66,19 @@ input, textarea {
   src: url("../fonts/ProximaNova-Bold.eot"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
   font-weight: bold;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "ProximaNova-Regular", sans-serif;
   overflow-x: hidden;
 }
 
 .container, .footer__container {
-  max-width: 85%;
+  max-width: 1590px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.footer__container {
-  max-width: 95%;
 }
 
 .header, .footer__bg {
@@ -603,6 +603,10 @@ body {
 }
 
 @media (max-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container {
     max-width: 98%;
   }
@@ -825,6 +829,11 @@ body {
   }
 }
 @media (max-width: 767px) {
+  body {
+    min-width: 300px;
+    overflow-x: hidden;
+  }
+
   .container {
     padding: 0 5px;
   }
